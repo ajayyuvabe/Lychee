@@ -1,7 +1,7 @@
 app_name = "lychee"
 app_title = "Lychee"
-app_publisher = "ajaykumar@yuvabe.com"
-app_description = "Its a app for the Jewellry manufacturing."
+app_publisher = "Ajay Kumar R"
+app_description = " Its a app for the Jewellry manufacturing. "
 app_email = "ajaykumar@yuvabe.com"
 app_license = "mit"
 # required_apps = []

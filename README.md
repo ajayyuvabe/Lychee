@@ -1,6 +1,6 @@
 ## Lychee
 
-Its a app for the Jewellry manufacturing.
+ Its a app for the Jewellry manufacturing. 
 
 #### License
 
