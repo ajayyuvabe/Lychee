@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:{first_name}-{last_name}-{####}",
  "creation": "2023-11-21 15:09:42.697017",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -14,7 +15,15 @@
   "last_name",
   "phone_number",
   "location",
-  "amended_from"
+  "amended_from",
+  "residential_address",
+  "address_type",
+  "address",
+  "delivery_address",
+  "address_type_1",
+  "address_2",
+  "password",
+  "confirm_password"
  ],
  "fields": [
   {
@@ -73,15 +82,59 @@
    "fieldtype": "Link",
    "label": "Location",
    "options": "Country"
+  },
+  {
+   "fieldname": "address_type",
+   "fieldtype": "Select",
+   "label": "Address Type",
+   "options": "Residential Address\nDelivery Address\nBoth"
+  },
+  {
+   "fieldname": "address",
+   "fieldtype": "Text",
+   "label": "Address 1"
+  },
+  {
+   "fieldname": "residential_address",
+   "fieldtype": "Heading",
+   "label": "Residential Address"
+  },
+  {
+   "fieldname": "delivery_address",
+   "fieldtype": "Heading",
+   "label": "Delivery Address"
+  },
+  {
+   "default": "Delivery Address",
+   "fieldname": "address_type_1",
+   "fieldtype": "Select",
+   "label": "Address Type",
+   "options": "Delivery Address"
+  },
+  {
+   "fieldname": "address_2",
+   "fieldtype": "Text",
+   "label": "Address 2"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "fieldname": "confirm_password",
+   "fieldtype": "Data",
+   "label": "Confirm Password"
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-21 16:16:40.519633",
+ "modified": "2023-11-23 10:14:33.781825",
  "modified_by": "Administrator",
  "module": "Lychee",
  "name": "User Registration",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
@@ -99,5 +152,6 @@
  ],
  "sort_field": "modified",
  "sort_order": "DESC",
- "states": []
+ "states": [],
+ "track_changes": 1
 }
