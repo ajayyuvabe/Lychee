@@ -11,6 +11,7 @@
   "first_name",
   "last_name",
   "user_name",
+  "password",
   "gender",
   "mobile_number",
   "date_of_birth",
@@ -82,12 +83,18 @@
    "fieldtype": "Data",
    "label": "Email",
    "reqd": 1
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password",
+   "reqd": 1
   }
  ],
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2023-11-23 10:05:49.600845",
+ "modified": "2023-11-23 15:09:47.880624",
  "modified_by": "Administrator",
  "module": "Lychee",
  "name": "Designer Registration",
